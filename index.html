@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Base SEO -->
+    <title>RepoAudit.ai - AI Code Auditor & Security Scanner</title>
+    <meta name="description" content="The AI Senior Engineer that never sleeps. Automated code review, security scanning, and technical debt audit for GitHub repositories." />
+    <meta name="keywords" content="AI code review, static analysis, github security scanner, technical debt audit, automated refactoring, code quality tool" />
+    <meta name="author" content="RepoAudit.ai" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://repoaudit.ai/" />
+    <meta property="og:title" content="RepoAudit.ai - Code. Perfected." />
+    <meta property="og:description" content="Instant security, performance, and architecture audits for any codebase. Stop shipping bugs." />
+    <meta property="og:image" content="https://repoaudit.ai/og-image.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://repoaudit.ai/" />
+    <meta property="twitter:title" content="RepoAudit.ai - Code. Perfected." />
+    <meta property="twitter:description" content="Instant security, performance, and architecture audits for any codebase. Stop shipping bugs." />
+    <meta property="twitter:image" content="https://repoaudit.ai/og-image.jpg" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              background: '#ffffff', 
+              surface: '#f8fafc', // slate-50
+              border: '#e2e8f0', // slate-200
+              primary: '#2563eb', // Blue-600
+              critical: '#ef4444', // Red-500
+              warning: '#f59e0b', // Amber-500
+              success: '#10b981', // Emerald-500
+              foreground: '#0f172a', // Slate-900
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              mono: ['JetBrains Mono', 'Fira Code', 'monospace'],
+            },
+            borderRadius: {
+              '4xl': '2rem',
+              '5xl': '2.5rem',
+            }
+          },
+        },
+      }
+    </script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- PrismJS for Code Highlighting -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-typescript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-json.min.js"></script>
+
+    <!-- Structured Data (JSON-LD) for Software Application -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "RepoAudit.ai",
+      "operatingSystem": "Cloud",
+      "applicationCategory": "DeveloperApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "1240"
+      },
+      "description": "AI-powered code audit tool for security, performance, and architecture analysis."
+    }
+    </script>
+
+    <style>
+      body {
+        background-color: #ffffff;
+        color: #0f172a;
+        font-family: 'Inter', sans-serif;
+      }
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f5f9;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #cbd5e1;
+        border-radius: 99px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #94a3b8;
+      }
+      .code-font {
+        font-family: 'JetBrains Mono', monospace;
+      }
+      /* Keep code blocks dark for contrast */
+      pre[class*="language-"] {
+        background: #0f172a !important;
+        text-shadow: none !important;
+        border: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        border-radius: 1rem !important;
+      }
+      code[class*="language-"] {
+        font-family: 'JetBrains Mono', monospace !important;
+        font-size: 0.875rem !important;
+        text-shadow: none !important;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.31.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
